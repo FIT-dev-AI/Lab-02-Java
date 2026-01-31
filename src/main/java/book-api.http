@@ -1,0 +1,27 @@
+### GET all
+GET http://localhost:8080/api/books
+
+### GET by id
+GET http://localhost:8080/api/books/1
+
+### POST
+POST http://localhost:8080/api/books
+Content-Type: application/json
+
+{
+  "id": 3,
+  "title": "Clean Code",
+  "author": "Robert Martin"
+}
+
+### PUT
+PUT http://localhost:8080/api/books/3
+Content-Type: application/json
+
+{
+  "title": "Clean Code Updated",
+  "author": "Uncle Bob"
+}
+
+### DELETE
+DELETE http://localhost:8080/api/books/3
